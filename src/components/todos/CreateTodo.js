@@ -3,12 +3,10 @@ import { connect } from 'react-redux'
 
 class CreateTodo extends Component {
 
-  constructor() {
-    super();
-    this.state = {
+  state = {
       text: '',
-    };
-  }
+  };
+  
 
   handleSubmit = event => {
     event.preventDefault();
